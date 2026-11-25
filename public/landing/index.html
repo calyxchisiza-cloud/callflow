@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7f3" />
+    <meta name="description" content="Callflow CRM brings calls, customer histories, and follow-ups together for support teams." />
+    <title>Callflow CRM — Every customer conversation, connected</title>
+    <link rel="icon" type="image/svg+xml" href="/callflow-mark.svg" />
+    <script>
+      document.documentElement.classList.add('js');
+      try {
+        if (sessionStorage.getItem('callflow-page-transition') === '1') {
+          document.documentElement.classList.add('transition-in');
+        }
+      } catch (error) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/page-transition.css?v=3" />
+    <link rel="stylesheet" href="/landing/styles.css?v=7" />
+    <script src="/assets/js/page-transition.js?v=3" defer></script>
+    <script src="/landing/main.js?v=3" defer></script>
+  </head>
+  <body>
+    <div class="page-transition" data-page-transition aria-hidden="true">
+      <div class="page-transition-inner"><img src="/callflow-mark.svg" alt="" /><span>callflow</span></div>
+    </div>
+    <main>
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Callflow home"><img src="/callflow-mark.svg" alt="" /><span>callflow</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Platform</a>
+          <a href="#industries">Teams</a>
+          <a href="#about">Why Callflow</a>
+          <a class="insight-link" href="#insights">Resources</a>
+          <a class="mobile-login" href="/login">Log in <span aria-hidden="true">→</span></a>
+          <a class="mobile-contact" href="/">Get started <span aria-hidden="true">↗</span></a>
+        </nav>
+        <div class="top-actions">
+          <button class="search-button" type="button" aria-label="Show search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="m15.5 15.5 4.2 4.2"></path></svg></button>
+          <a class="login-button" href="/login">Log in</a>
+          <a class="contact-button" href="/">Get started <span aria-hidden="true">↗</span></a>
+        </div>
+      </header>
+
+      <form class="search-panel" role="search" hidden>
+        <label for="site-search">Search Callflow CRM</label>
+        <input id="site-search" type="search" placeholder="What are you looking for?" />
+        <button type="button" class="search-close" aria-label="Close search">×</button>
+      </form>
+
+      <section class="hero" aria-label="Callflow CRM introduction">
+        <div class="hero-media"><img class="hero-image" src="/assets/images/image-1.webp?v=2" alt="A customer support agent wearing a headset and using CRM software at a dual-monitor workstation" /></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+
+        <div class="hero-copy" id="home">
+          <p class="hero-eyebrow"><span></span> Built for customer conversations</p>
+          <h1>Every customer<br />conversation, <span>connected.</span></h1>
+          <p class="hero-description">Bring calls, contacts, customer history, and follow-ups together in one intuitive CRM built for support teams.</p>
+          <a class="hero-cta" href="/">Start your free workspace <span class="round-arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-pagination" aria-hidden="true"><span>01</span><i></i><span>03</span></div>
+        <div class="hero-categories" aria-label="Explore Callflow CRM">
+          <a class="category active" href="#about"><span>01</span> Call center CRM <b aria-hidden="true">↗</b></a>
+          <a class="category" href="#services"><span>02</span> Customer context <b aria-hidden="true">↗</b></a>
+          <a class="category" href="#industries"><span>03</span> Team performance <b aria-hidden="true">↗</b></a>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <div class="ticker-group">
+            <span class="ticker-item">Call routing</span>
+            <span class="ticker-item">Customer context</span>
+            <span class="ticker-item">Live handoffs</span>
+            <span class="ticker-item">Follow-ups</span>
+            <span class="ticker-item">Coaching insights</span>
+            <span class="ticker-item">One clear workspace</span>
+          </div>
+          <div class="ticker-group" aria-hidden="true">
+            <span class="ticker-item">Call routing</span>
+            <span class="ticker-item">Customer context</span>
+            <span class="ticker-item">Live handoffs</span>
+            <span class="ticker-item">Follow-ups</span>
+            <span class="ticker-item">Coaching insights</span>
+            <span class="ticker-item">One clear workspace</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="stories" id="insights" aria-label="Callflow customer support stories and insights">
+        <a class="story-card story-text" id="about" href="#services" data-reveal="up">
+          <div class="story-top"><span class="tag">Who we are</span><span class="circle-arrow" aria-hidden="true">↗</span></div>
+          <h2>One clear view of every customer.</h2>
+          <img src="/assets/images/image-2.webp?v=2" alt="Call center support team collaborating around a shared CRM" />
+          <span class="story-foot">Meet the platform <b aria-hidden="true">↗</b></span>
+        </a>
+        <a class="story-card story-feature" href="#contact" data-reveal="up">
+          <img src="/assets/images/image-3.webp?v=2" alt="A support agent reviewing customer history before a call" />
+          <div class="feature-wash"></div>
+          <div class="story-top"><span class="tag">Customer-first support</span><span class="circle-arrow" aria-hidden="true">↗</span></div>
+          <div class="feature-copy"><span class="tag tag-dark">Connected service</span><h2>Turn every conversation into lasting customer context.</h2><span class="story-foot">See how Callflow works <b aria-hidden="true">↗</b></span></div>
+        </a>
+        <a class="story-card story-text" href="#services" data-reveal="up">
+          <div class="story-top"><span class="tag">Fresh thinking</span><span class="circle-arrow" aria-hidden="true">↗</span></div>
+          <h2>Know what customers need. Improve how you help.</h2>
+          <img src="/assets/images/image-4.webp?v=2" alt="A call center team lead reviewing customer service insights" />
+          <span class="story-foot">Explore CRM insights <b aria-hidden="true">↗</b></span>
+        </a>
+      </section>
+
+      <section class="services" id="services">
+        <div class="section-intro" data-reveal="up"><span class="tag">The Callflow platform</span><h2>Everything your call center needs<br />to build <em>stronger relationships.</em></h2><p>One connected workspace to help every agent deliver thoughtful, informed service.</p></div>
+        <div class="service-grid" id="industries">
+          <a class="service-card service-lime" href="#contact" data-reveal="up"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18V9m5 9V5m5 13v-7m6 7V3"></path><path d="M2 20h20"></path></svg></span><span class="service-number">01 / CALLS</span><h3>Manage every call</h3><p>Route conversations and keep every callback on track.</p><b class="service-arrow" aria-hidden="true">↗</b></a>
+          <a class="service-card service-cream" href="#contact" data-reveal="up"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7v5l3.4 2"></path></svg></span><span class="service-number">02 / CUSTOMER CRM</span><h3>Know every customer</h3><p>See contacts, history, and notes before you say hello.</p><b class="service-arrow" aria-hidden="true">↗</b></a>
+          <a class="service-card service-sage" href="#contact" data-reveal="up"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18.5 9 13l3.4 3.5L20 8"></path><path d="M14.5 8H20v5.5"></path></svg></span><span class="service-number">03 / WORKFLOW</span><h3>Keep teams in sync</h3><p>Share context and hand off calls without repeat questions.</p><b class="service-arrow" aria-hidden="true">↗</b></a>
+          <a class="service-card service-dark" href="#contact" data-reveal="up"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 18V8l7-4 7 4v10l-7 4-7-4Z"></path><path d="m5.5 8.5 6.5 4 6.5-4M12 12.5V22"></path></svg></span><span class="service-number">04 / INSIGHTS</span><h3>Improve with insight</h3><p>Spot trends and coach toward better customer outcomes.</p><b class="service-arrow" aria-hidden="true">↗</b></a>
+        </div>
+      </section>
+
+      <section class="contact-strip" id="contact" data-reveal="scale"><div><span class="tag">Ready when you are</span><h2>Make every customer conversation count.</h2></div><a href="/">Start your free workspace <span aria-hidden="true">↗</span></a></section>
+      <footer class="footer"><a class="brand" href="/" aria-label="Callflow home"><img src="/callflow-mark.svg" alt="" /><span>callflow</span></a><span>Better conversations. Stronger relationships.</span><nav class="footer-links" aria-label="Legal"><a href="/terms">Terms</a><a href="/privacy">Privacy</a></nav><a href="/">Log in / Sign up</a></footer>
+    </main>
+  </body>
+</html>

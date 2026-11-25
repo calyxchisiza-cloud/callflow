@@ -1,0 +1,1781 @@
+{
+  "generatedFrom": "APP-PLAN.md",
+  "pages": [
+    {
+      "number": 1,
+      "title": "Main Dashboard",
+      "route": "/app/dashboard",
+      "template": "DSH",
+      "module": "Dashboards",
+      "reference": "strong"
+    },
+    {
+      "number": 2,
+      "title": "Live Call Dashboard",
+      "route": "/app/dashboard/live",
+      "template": "MON",
+      "module": "Dashboards",
+      "reference": "partial"
+    },
+    {
+      "number": 3,
+      "title": "Agent Performance Dashboard",
+      "route": "/app/dashboard/agent-performance",
+      "template": "DSH",
+      "module": "Dashboards",
+      "reference": "strong"
+    },
+    {
+      "number": 4,
+      "title": "Queue Performance Dashboard",
+      "route": "/app/dashboard/queue-performance",
+      "template": "DSH",
+      "module": "Dashboards",
+      "reference": "partial"
+    },
+    {
+      "number": 5,
+      "title": "Sales Overview Dashboard",
+      "route": "/app/dashboard/sales",
+      "template": "DSH",
+      "module": "Dashboards",
+      "reference": "none"
+    },
+    {
+      "number": 6,
+      "title": "Customer Activity Dashboard",
+      "route": "/app/dashboard/customer-activity",
+      "template": "DSH",
+      "module": "Dashboards",
+      "reference": "partial"
+    },
+    {
+      "number": 7,
+      "title": "Agent Workspace",
+      "route": "/app/calls/workspace",
+      "template": "WRK",
+      "module": "Call center & telephony",
+      "reference": "strong"
+    },
+    {
+      "number": 8,
+      "title": "Softphone",
+      "route": "/app/calls/softphone",
+      "template": "WRK",
+      "module": "Call center & telephony",
+      "reference": "strong"
+    },
+    {
+      "number": 9,
+      "title": "Active Calls",
+      "route": "/app/calls/active",
+      "template": "MON",
+      "module": "Call center & telephony",
+      "reference": "partial"
+    },
+    {
+      "number": 10,
+      "title": "Call History",
+      "route": "/app/calls/history",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "strong"
+    },
+    {
+      "number": 11,
+      "title": "Incoming Calls",
+      "route": "/app/calls/incoming",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "partial"
+    },
+    {
+      "number": 12,
+      "title": "Outgoing Calls",
+      "route": "/app/calls/outgoing",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "partial"
+    },
+    {
+      "number": 13,
+      "title": "Missed Calls",
+      "route": "/app/calls/missed",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "strong"
+    },
+    {
+      "number": 14,
+      "title": "Call Details",
+      "route": "/app/calls/[id]",
+      "template": "DTL",
+      "module": "Call center & telephony",
+      "reference": "partial"
+    },
+    {
+      "number": 15,
+      "title": "Call Recordings",
+      "route": "/app/calls/recordings",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "partial"
+    },
+    {
+      "number": 16,
+      "title": "Recording Details / Playback",
+      "route": "/app/calls/recordings/[id]",
+      "template": "MED",
+      "module": "Call center & telephony",
+      "reference": "none"
+    },
+    {
+      "number": 17,
+      "title": "Voicemail Inbox",
+      "route": "/app/calls/voicemail",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "none"
+    },
+    {
+      "number": 18,
+      "title": "Voicemail Details",
+      "route": "/app/calls/voicemail/[id]",
+      "template": "MED",
+      "module": "Call center & telephony",
+      "reference": "none"
+    },
+    {
+      "number": 19,
+      "title": "Callback Management",
+      "route": "/app/calls/callbacks",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "strong"
+    },
+    {
+      "number": 20,
+      "title": "Call Disposition Management",
+      "route": "/app/settings/dispositions",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "strong"
+    },
+    {
+      "number": 21,
+      "title": "Call Transfer Management",
+      "route": "/app/calls/transfers",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "partial"
+    },
+    {
+      "number": 22,
+      "title": "Conference Calls",
+      "route": "/app/calls/conferences",
+      "template": "MON",
+      "module": "Call center & telephony",
+      "reference": "none"
+    },
+    {
+      "number": 23,
+      "title": "Dialer",
+      "route": "/app/calls/dialer",
+      "template": "WRK",
+      "module": "Call center & telephony",
+      "reference": "strong"
+    },
+    {
+      "number": 24,
+      "title": "Click-to-Call",
+      "route": "/app/calls/click-to-call",
+      "template": "WRK",
+      "module": "Call center & telephony",
+      "reference": "strong"
+    },
+    {
+      "number": 25,
+      "title": "Call Notes",
+      "route": "/app/calls/notes",
+      "template": "LST",
+      "module": "Call center & telephony",
+      "reference": "partial"
+    },
+    {
+      "number": 26,
+      "title": "Queue Dashboard",
+      "route": "/app/queues",
+      "template": "DSH",
+      "module": "Queue management",
+      "reference": "partial"
+    },
+    {
+      "number": 27,
+      "title": "All Queues",
+      "route": "/app/queues/all",
+      "template": "LST",
+      "module": "Queue management",
+      "reference": "strong"
+    },
+    {
+      "number": 28,
+      "title": "Create Queue",
+      "route": "/app/queues/new",
+      "template": "FRM",
+      "module": "Queue management",
+      "reference": "strong"
+    },
+    {
+      "number": 29,
+      "title": "Edit Queue",
+      "route": "/app/queues/[id]/edit",
+      "template": "FRM",
+      "module": "Queue management",
+      "reference": "strong"
+    },
+    {
+      "number": 30,
+      "title": "Queue Details",
+      "route": "/app/queues/[id]",
+      "template": "DTL",
+      "module": "Queue management",
+      "reference": "strong"
+    },
+    {
+      "number": 31,
+      "title": "Queue Members",
+      "route": "/app/queues/[id]/members",
+      "template": "LST",
+      "module": "Queue management",
+      "reference": "strong"
+    },
+    {
+      "number": 32,
+      "title": "Queue Monitoring",
+      "route": "/app/queues/monitor",
+      "template": "MON",
+      "module": "Queue management",
+      "reference": "partial"
+    },
+    {
+      "number": 33,
+      "title": "Queue Performance",
+      "route": "/app/queues/performance",
+      "template": "DSH",
+      "module": "Queue management",
+      "reference": "strong"
+    },
+    {
+      "number": 34,
+      "title": "Queue Routing Rules",
+      "route": "/app/queues/[id]/routing",
+      "template": "FRM",
+      "module": "Queue management",
+      "reference": "strong"
+    },
+    {
+      "number": 35,
+      "title": "IVR Dashboard",
+      "route": "/app/ivr",
+      "template": "DSH",
+      "module": "IVR & call flows",
+      "reference": "partial"
+    },
+    {
+      "number": 36,
+      "title": "IVR Flow Builder",
+      "route": "/app/ivr/builder",
+      "template": "BLD",
+      "module": "IVR & call flows",
+      "reference": "none"
+    },
+    {
+      "number": 37,
+      "title": "Create IVR",
+      "route": "/app/ivr/new",
+      "template": "FRM",
+      "module": "IVR & call flows",
+      "reference": "partial"
+    },
+    {
+      "number": 38,
+      "title": "Edit IVR",
+      "route": "/app/ivr/[id]/edit",
+      "template": "FRM",
+      "module": "IVR & call flows",
+      "reference": "partial"
+    },
+    {
+      "number": 39,
+      "title": "IVR Details",
+      "route": "/app/ivr/[id]",
+      "template": "DTL",
+      "module": "IVR & call flows",
+      "reference": "partial"
+    },
+    {
+      "number": 40,
+      "title": "Call Flow Builder",
+      "route": "/app/ivr/flows/[id]",
+      "template": "BLD",
+      "module": "IVR & call flows",
+      "reference": "none"
+    },
+    {
+      "number": 41,
+      "title": "Call Routing Rules",
+      "route": "/app/ivr/routing",
+      "template": "LST",
+      "module": "IVR & call flows",
+      "reference": "strong"
+    },
+    {
+      "number": 42,
+      "title": "Business Hours",
+      "route": "/app/ivr/business-hours",
+      "template": "SET",
+      "module": "IVR & call flows",
+      "reference": "partial"
+    },
+    {
+      "number": 43,
+      "title": "Holiday Schedules",
+      "route": "/app/ivr/holidays",
+      "template": "LST",
+      "module": "IVR & call flows",
+      "reference": "partial"
+    },
+    {
+      "number": 44,
+      "title": "Ring Groups",
+      "route": "/app/ivr/ring-groups",
+      "template": "LST",
+      "module": "IVR & call flows",
+      "reference": "strong"
+    },
+    {
+      "number": 45,
+      "title": "Ring Group Details",
+      "route": "/app/ivr/ring-groups/[id]",
+      "template": "DTL",
+      "module": "IVR & call flows",
+      "reference": "strong"
+    },
+    {
+      "number": 46,
+      "title": "CRM Dashboard",
+      "route": "/app/crm",
+      "template": "DSH",
+      "module": "CRM — contacts",
+      "reference": "strong"
+    },
+    {
+      "number": 47,
+      "title": "All Contacts",
+      "route": "/app/crm/contacts",
+      "template": "LST",
+      "module": "CRM — contacts",
+      "reference": "partial"
+    },
+    {
+      "number": 48,
+      "title": "Create Contact",
+      "route": "/app/crm/contacts/new",
+      "template": "FRM",
+      "module": "CRM — contacts",
+      "reference": "partial"
+    },
+    {
+      "number": 49,
+      "title": "Edit Contact",
+      "route": "/app/crm/contacts/[id]/edit",
+      "template": "FRM",
+      "module": "CRM — contacts",
+      "reference": "partial"
+    },
+    {
+      "number": 50,
+      "title": "Contact Details",
+      "route": "/app/crm/contacts/[id]",
+      "template": "DTL",
+      "module": "CRM — contacts",
+      "reference": "partial"
+    },
+    {
+      "number": 51,
+      "title": "Contact Activity Timeline",
+      "route": "/app/crm/contacts/[id]/timeline",
+      "template": "DTL",
+      "module": "CRM — contacts",
+      "reference": "partial"
+    },
+    {
+      "number": 52,
+      "title": "Contact Import",
+      "route": "/app/crm/contacts/import",
+      "template": "FRM",
+      "module": "CRM — contacts",
+      "reference": "strong"
+    },
+    {
+      "number": 53,
+      "title": "Contact Export",
+      "route": "/app/crm/contacts/export",
+      "template": "FRM",
+      "module": "CRM — contacts",
+      "reference": "partial"
+    },
+    {
+      "number": 54,
+      "title": "Contact Segments",
+      "route": "/app/crm/segments",
+      "template": "LST",
+      "module": "CRM — contacts",
+      "reference": "none"
+    },
+    {
+      "number": 55,
+      "title": "All Companies",
+      "route": "/app/crm/companies",
+      "template": "LST",
+      "module": "CRM — companies",
+      "reference": "none"
+    },
+    {
+      "number": 56,
+      "title": "Create Company",
+      "route": "/app/crm/companies/new",
+      "template": "FRM",
+      "module": "CRM — companies",
+      "reference": "none"
+    },
+    {
+      "number": 57,
+      "title": "Edit Company",
+      "route": "/app/crm/companies/[id]/edit",
+      "template": "FRM",
+      "module": "CRM — companies",
+      "reference": "none"
+    },
+    {
+      "number": 58,
+      "title": "Company Details",
+      "route": "/app/crm/companies/[id]",
+      "template": "DTL",
+      "module": "CRM — companies",
+      "reference": "none"
+    },
+    {
+      "number": 59,
+      "title": "Company Contacts",
+      "route": "/app/crm/companies/[id]/contacts",
+      "template": "LST",
+      "module": "CRM — companies",
+      "reference": "none"
+    },
+    {
+      "number": 60,
+      "title": "Leads Dashboard",
+      "route": "/app/crm/leads",
+      "template": "DSH",
+      "module": "CRM — leads",
+      "reference": "strong"
+    },
+    {
+      "number": 61,
+      "title": "All Leads",
+      "route": "/app/crm/leads/all",
+      "template": "LST",
+      "module": "CRM — leads",
+      "reference": "strong"
+    },
+    {
+      "number": 62,
+      "title": "Create Lead",
+      "route": "/app/crm/leads/new",
+      "template": "FRM",
+      "module": "CRM — leads",
+      "reference": "partial"
+    },
+    {
+      "number": 63,
+      "title": "Edit Lead",
+      "route": "/app/crm/leads/[id]/edit",
+      "template": "FRM",
+      "module": "CRM — leads",
+      "reference": "partial"
+    },
+    {
+      "number": 64,
+      "title": "Lead Details",
+      "route": "/app/crm/leads/[id]",
+      "template": "DTL",
+      "module": "CRM — leads",
+      "reference": "strong"
+    },
+    {
+      "number": 65,
+      "title": "Lead Sources",
+      "route": "/app/crm/leads/sources",
+      "template": "SET",
+      "module": "CRM — leads",
+      "reference": "partial"
+    },
+    {
+      "number": 66,
+      "title": "Lead Assignment",
+      "route": "/app/crm/leads/assignment",
+      "template": "SET",
+      "module": "CRM — leads",
+      "reference": "partial"
+    },
+    {
+      "number": 67,
+      "title": "Lead Conversion",
+      "route": "/app/crm/leads/[id]/convert",
+      "template": "FRM",
+      "module": "CRM — leads",
+      "reference": "none"
+    },
+    {
+      "number": 68,
+      "title": "Sales Dashboard",
+      "route": "/app/sales",
+      "template": "DSH",
+      "module": "CRM — sales & deals",
+      "reference": "none"
+    },
+    {
+      "number": 69,
+      "title": "Sales Pipeline",
+      "route": "/app/sales/pipeline",
+      "template": "BLD",
+      "module": "CRM — sales & deals",
+      "reference": "none"
+    },
+    {
+      "number": 70,
+      "title": "Pipeline Management",
+      "route": "/app/sales/pipelines",
+      "template": "SET",
+      "module": "CRM — sales & deals",
+      "reference": "none"
+    },
+    {
+      "number": 71,
+      "title": "All Deals",
+      "route": "/app/sales/deals",
+      "template": "LST",
+      "module": "CRM — sales & deals",
+      "reference": "none"
+    },
+    {
+      "number": 72,
+      "title": "Create Deal",
+      "route": "/app/sales/deals/new",
+      "template": "FRM",
+      "module": "CRM — sales & deals",
+      "reference": "none"
+    },
+    {
+      "number": 73,
+      "title": "Edit Deal",
+      "route": "/app/sales/deals/[id]/edit",
+      "template": "FRM",
+      "module": "CRM — sales & deals",
+      "reference": "none"
+    },
+    {
+      "number": 74,
+      "title": "Deal Details",
+      "route": "/app/sales/deals/[id]",
+      "template": "DTL",
+      "module": "CRM — sales & deals",
+      "reference": "none"
+    },
+    {
+      "number": 75,
+      "title": "Sales Activities",
+      "route": "/app/sales/activities",
+      "template": "LST",
+      "module": "CRM — sales & deals",
+      "reference": "none"
+    },
+    {
+      "number": 76,
+      "title": "Sales Forecast",
+      "route": "/app/sales/forecast",
+      "template": "DSH",
+      "module": "CRM — sales & deals",
+      "reference": "none"
+    },
+    {
+      "number": 77,
+      "title": "Activities Dashboard",
+      "route": "/app/work/activities",
+      "template": "DSH",
+      "module": "Tasks & activities",
+      "reference": "partial"
+    },
+    {
+      "number": 78,
+      "title": "All Activities",
+      "route": "/app/work/activities/all",
+      "template": "LST",
+      "module": "Tasks & activities",
+      "reference": "partial"
+    },
+    {
+      "number": 79,
+      "title": "Create Activity",
+      "route": "/app/work/activities/new",
+      "template": "FRM",
+      "module": "Tasks & activities",
+      "reference": "none"
+    },
+    {
+      "number": 80,
+      "title": "Activity Details",
+      "route": "/app/work/activities/[id]",
+      "template": "DTL",
+      "module": "Tasks & activities",
+      "reference": "none"
+    },
+    {
+      "number": 81,
+      "title": "Task Management",
+      "route": "/app/work/tasks",
+      "template": "LST",
+      "module": "Tasks & activities",
+      "reference": "none"
+    },
+    {
+      "number": 82,
+      "title": "Task Calendar",
+      "route": "/app/work/calendar",
+      "template": "CAL",
+      "module": "Tasks & activities",
+      "reference": "partial"
+    },
+    {
+      "number": 83,
+      "title": "Meeting Management",
+      "route": "/app/work/meetings",
+      "template": "LST",
+      "module": "Tasks & activities",
+      "reference": "none"
+    },
+    {
+      "number": 84,
+      "title": "Notes Management",
+      "route": "/app/work/notes",
+      "template": "LST",
+      "module": "Tasks & activities",
+      "reference": "none"
+    },
+    {
+      "number": 85,
+      "title": "Reminders",
+      "route": "/app/work/reminders",
+      "template": "LST",
+      "module": "Tasks & activities",
+      "reference": "none"
+    },
+    {
+      "number": 86,
+      "title": "Support Dashboard",
+      "route": "/app/support",
+      "template": "DSH",
+      "module": "Support & ticketing",
+      "reference": "partial"
+    },
+    {
+      "number": 87,
+      "title": "All Tickets",
+      "route": "/app/support/tickets",
+      "template": "LST",
+      "module": "Support & ticketing",
+      "reference": "strong"
+    },
+    {
+      "number": 88,
+      "title": "Create Ticket",
+      "route": "/app/support/tickets/new",
+      "template": "FRM",
+      "module": "Support & ticketing",
+      "reference": "partial"
+    },
+    {
+      "number": 89,
+      "title": "Ticket Details",
+      "route": "/app/support/tickets/[id]",
+      "template": "DTL",
+      "module": "Support & ticketing",
+      "reference": "partial"
+    },
+    {
+      "number": 90,
+      "title": "Edit Ticket",
+      "route": "/app/support/tickets/[id]/edit",
+      "template": "FRM",
+      "module": "Support & ticketing",
+      "reference": "partial"
+    },
+    {
+      "number": 91,
+      "title": "Ticket Assignment",
+      "route": "/app/support/assignment",
+      "template": "SET",
+      "module": "Support & ticketing",
+      "reference": "partial"
+    },
+    {
+      "number": 92,
+      "title": "Ticket Categories",
+      "route": "/app/support/categories",
+      "template": "SET",
+      "module": "Support & ticketing",
+      "reference": "none"
+    },
+    {
+      "number": 93,
+      "title": "Ticket Priorities",
+      "route": "/app/support/priorities",
+      "template": "SET",
+      "module": "Support & ticketing",
+      "reference": "none"
+    },
+    {
+      "number": 94,
+      "title": "SLA Management",
+      "route": "/app/support/sla",
+      "template": "SET",
+      "module": "Support & ticketing",
+      "reference": "strong"
+    },
+    {
+      "number": 95,
+      "title": "Customer Feedback",
+      "route": "/app/support/feedback",
+      "template": "LST",
+      "module": "Support & ticketing",
+      "reference": "none"
+    },
+    {
+      "number": 96,
+      "title": "Knowledge Base",
+      "route": "/app/support/knowledge-base",
+      "template": "LST",
+      "module": "Support & ticketing",
+      "reference": "strong"
+    },
+    {
+      "number": 97,
+      "title": "Knowledge Base Article",
+      "route": "/app/support/knowledge-base/[slug]",
+      "template": "DOC",
+      "module": "Support & ticketing",
+      "reference": "partial"
+    },
+    {
+      "number": 98,
+      "title": "Campaign Dashboard",
+      "route": "/app/campaigns",
+      "template": "DSH",
+      "module": "Campaigns",
+      "reference": "partial"
+    },
+    {
+      "number": 99,
+      "title": "All Campaigns",
+      "route": "/app/campaigns/all",
+      "template": "LST",
+      "module": "Campaigns",
+      "reference": "strong"
+    },
+    {
+      "number": 100,
+      "title": "Create Campaign",
+      "route": "/app/campaigns/new",
+      "template": "FRM",
+      "module": "Campaigns",
+      "reference": "partial"
+    },
+    {
+      "number": 101,
+      "title": "Edit Campaign",
+      "route": "/app/campaigns/[id]/edit",
+      "template": "FRM",
+      "module": "Campaigns",
+      "reference": "partial"
+    },
+    {
+      "number": 102,
+      "title": "Campaign Details",
+      "route": "/app/campaigns/[id]",
+      "template": "DTL",
+      "module": "Campaigns",
+      "reference": "strong"
+    },
+    {
+      "number": 103,
+      "title": "Campaign Contact Lists",
+      "route": "/app/campaigns/[id]/lists",
+      "template": "LST",
+      "module": "Campaigns",
+      "reference": "partial"
+    },
+    {
+      "number": 104,
+      "title": "Campaign Scheduling",
+      "route": "/app/campaigns/[id]/schedule",
+      "template": "FRM",
+      "module": "Campaigns",
+      "reference": "partial"
+    },
+    {
+      "number": 105,
+      "title": "Campaign Call Scripts",
+      "route": "/app/campaigns/[id]/scripts",
+      "template": "FRM",
+      "module": "Campaigns",
+      "reference": "strong"
+    },
+    {
+      "number": 106,
+      "title": "Campaign Performance",
+      "route": "/app/campaigns/[id]/performance",
+      "template": "DSH",
+      "module": "Campaigns",
+      "reference": "strong"
+    },
+    {
+      "number": 107,
+      "title": "Do Not Call Management",
+      "route": "/app/campaigns/do-not-call",
+      "template": "LST",
+      "module": "Campaigns",
+      "reference": "partial"
+    },
+    {
+      "number": 108,
+      "title": "Agent Dashboard",
+      "route": "/app/agents",
+      "template": "DSH",
+      "module": "Agent management",
+      "reference": "strong"
+    },
+    {
+      "number": 109,
+      "title": "All Agents",
+      "route": "/app/agents/all",
+      "template": "LST",
+      "module": "Agent management",
+      "reference": "strong"
+    },
+    {
+      "number": 110,
+      "title": "Create Agent",
+      "route": "/app/agents/new",
+      "template": "FRM",
+      "module": "Agent management",
+      "reference": "strong"
+    },
+    {
+      "number": 111,
+      "title": "Edit Agent",
+      "route": "/app/agents/[id]/edit",
+      "template": "FRM",
+      "module": "Agent management",
+      "reference": "strong"
+    },
+    {
+      "number": 112,
+      "title": "Agent Details",
+      "route": "/app/agents/[id]",
+      "template": "DTL",
+      "module": "Agent management",
+      "reference": "strong"
+    },
+    {
+      "number": 113,
+      "title": "Agent Availability",
+      "route": "/app/agents/availability",
+      "template": "MON",
+      "module": "Agent management",
+      "reference": "partial"
+    },
+    {
+      "number": 114,
+      "title": "Agent Activity",
+      "route": "/app/agents/activity",
+      "template": "LST",
+      "module": "Agent management",
+      "reference": "partial"
+    },
+    {
+      "number": 115,
+      "title": "Agent Call History",
+      "route": "/app/agents/[id]/calls",
+      "template": "LST",
+      "module": "Agent management",
+      "reference": "strong"
+    },
+    {
+      "number": 116,
+      "title": "Agent Performance",
+      "route": "/app/agents/[id]/performance",
+      "template": "DSH",
+      "module": "Agent management",
+      "reference": "strong"
+    },
+    {
+      "number": 117,
+      "title": "Agent Extensions",
+      "route": "/app/agents/[id]/extensions",
+      "template": "SET",
+      "module": "Agent management",
+      "reference": "partial"
+    },
+    {
+      "number": 118,
+      "title": "Team Dashboard",
+      "route": "/app/teams",
+      "template": "DSH",
+      "module": "Team & workforce",
+      "reference": "none"
+    },
+    {
+      "number": 119,
+      "title": "All Teams",
+      "route": "/app/teams/all",
+      "template": "LST",
+      "module": "Team & workforce",
+      "reference": "partial"
+    },
+    {
+      "number": 120,
+      "title": "Create Team",
+      "route": "/app/teams/new",
+      "template": "FRM",
+      "module": "Team & workforce",
+      "reference": "partial"
+    },
+    {
+      "number": 121,
+      "title": "Edit Team",
+      "route": "/app/teams/[id]/edit",
+      "template": "FRM",
+      "module": "Team & workforce",
+      "reference": "partial"
+    },
+    {
+      "number": 122,
+      "title": "Team Details",
+      "route": "/app/teams/[id]",
+      "template": "DTL",
+      "module": "Team & workforce",
+      "reference": "strong"
+    },
+    {
+      "number": 123,
+      "title": "Team Members",
+      "route": "/app/teams/[id]/members",
+      "template": "LST",
+      "module": "Team & workforce",
+      "reference": "strong"
+    },
+    {
+      "number": 124,
+      "title": "Shift Management",
+      "route": "/app/teams/shifts",
+      "template": "LST",
+      "module": "Team & workforce",
+      "reference": "none"
+    },
+    {
+      "number": 125,
+      "title": "Shift Scheduling",
+      "route": "/app/teams/schedule",
+      "template": "CAL",
+      "module": "Team & workforce",
+      "reference": "none"
+    },
+    {
+      "number": 126,
+      "title": "Attendance Management",
+      "route": "/app/teams/attendance",
+      "template": "LST",
+      "module": "Team & workforce",
+      "reference": "none"
+    },
+    {
+      "number": 127,
+      "title": "Break Management",
+      "route": "/app/teams/breaks",
+      "template": "SET",
+      "module": "Team & workforce",
+      "reference": "partial"
+    },
+    {
+      "number": 128,
+      "title": "Workforce Reports",
+      "route": "/app/teams/reports",
+      "template": "DSH",
+      "module": "Team & workforce",
+      "reference": "partial"
+    },
+    {
+      "number": 129,
+      "title": "QA Dashboard",
+      "route": "/app/qa",
+      "template": "DSH",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 130,
+      "title": "Call Evaluation",
+      "route": "/app/qa/evaluations",
+      "template": "LST",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 131,
+      "title": "Evaluation Details",
+      "route": "/app/qa/evaluations/[id]",
+      "template": "DTL",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 132,
+      "title": "Evaluation Forms",
+      "route": "/app/qa/forms",
+      "template": "LST",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 133,
+      "title": "Create Evaluation Form",
+      "route": "/app/qa/forms/new",
+      "template": "FRM",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 134,
+      "title": "Edit Evaluation Form",
+      "route": "/app/qa/forms/[id]/edit",
+      "template": "FRM",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 135,
+      "title": "Scorecards",
+      "route": "/app/qa/scorecards",
+      "template": "DSH",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 136,
+      "title": "Agent Coaching",
+      "route": "/app/qa/coaching",
+      "template": "LST",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 137,
+      "title": "Coaching History",
+      "route": "/app/qa/coaching/history",
+      "template": "LST",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 138,
+      "title": "Quality Reports",
+      "route": "/app/qa/reports",
+      "template": "DSH",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 139,
+      "title": "Customer Satisfaction Reports",
+      "route": "/app/qa/csat",
+      "template": "DSH",
+      "module": "Quality assurance",
+      "reference": "none"
+    },
+    {
+      "number": 140,
+      "title": "Analytics Dashboard",
+      "route": "/app/reports",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "strong"
+    },
+    {
+      "number": 141,
+      "title": "Call Reports",
+      "route": "/app/reports/calls",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "strong"
+    },
+    {
+      "number": 142,
+      "title": "Agent Reports",
+      "route": "/app/reports/agents",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "strong"
+    },
+    {
+      "number": 143,
+      "title": "Queue Reports",
+      "route": "/app/reports/queues",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "strong"
+    },
+    {
+      "number": 144,
+      "title": "Abandoned Call Reports",
+      "route": "/app/reports/abandoned-calls",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "partial"
+    },
+    {
+      "number": 145,
+      "title": "Missed Call Reports",
+      "route": "/app/reports/missed-calls",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "partial"
+    },
+    {
+      "number": 146,
+      "title": "SLA Reports",
+      "route": "/app/reports/sla",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "strong"
+    },
+    {
+      "number": 147,
+      "title": "Campaign Reports",
+      "route": "/app/reports/campaigns",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "strong"
+    },
+    {
+      "number": 148,
+      "title": "CRM Reports",
+      "route": "/app/reports/crm",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "partial"
+    },
+    {
+      "number": 149,
+      "title": "Sales Reports",
+      "route": "/app/reports/sales",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "none"
+    },
+    {
+      "number": 150,
+      "title": "Ticket Reports",
+      "route": "/app/reports/tickets",
+      "template": "DSH",
+      "module": "Reports & analytics",
+      "reference": "none"
+    },
+    {
+      "number": 151,
+      "title": "Custom Report Builder",
+      "route": "/app/reports/builder",
+      "template": "BLD",
+      "module": "Reports & analytics",
+      "reference": "none"
+    },
+    {
+      "number": 152,
+      "title": "Scheduled Reports",
+      "route": "/app/reports/scheduled",
+      "template": "LST",
+      "module": "Reports & analytics",
+      "reference": "none"
+    },
+    {
+      "number": 153,
+      "title": "Export History",
+      "route": "/app/reports/exports",
+      "template": "LST",
+      "module": "Reports & analytics",
+      "reference": "partial"
+    },
+    {
+      "number": 154,
+      "title": "PBX Dashboard",
+      "route": "/app/pbx",
+      "template": "DSH",
+      "module": "Telephony & PBX configuration",
+      "reference": "partial"
+    },
+    {
+      "number": 155,
+      "title": "Asterisk Server Management",
+      "route": "/app/pbx/asterisk",
+      "template": "SET",
+      "module": "Telephony & PBX configuration",
+      "reference": "none"
+    },
+    {
+      "number": 156,
+      "title": "SIP Trunk Management",
+      "route": "/app/pbx/sip-trunks",
+      "template": "LST",
+      "module": "Telephony & PBX configuration",
+      "reference": "none"
+    },
+    {
+      "number": 157,
+      "title": "Create SIP Trunk",
+      "route": "/app/pbx/sip-trunks/new",
+      "template": "FRM",
+      "module": "Telephony & PBX configuration",
+      "reference": "none"
+    },
+    {
+      "number": 158,
+      "title": "Edit SIP Trunk",
+      "route": "/app/pbx/sip-trunks/[id]/edit",
+      "template": "FRM",
+      "module": "Telephony & PBX configuration",
+      "reference": "none"
+    },
+    {
+      "number": 159,
+      "title": "SIP Extension Management",
+      "route": "/app/pbx/extensions",
+      "template": "LST",
+      "module": "Telephony & PBX configuration",
+      "reference": "partial"
+    },
+    {
+      "number": 160,
+      "title": "Create Extension",
+      "route": "/app/pbx/extensions/new",
+      "template": "FRM",
+      "module": "Telephony & PBX configuration",
+      "reference": "partial"
+    },
+    {
+      "number": 161,
+      "title": "Edit Extension",
+      "route": "/app/pbx/extensions/[id]/edit",
+      "template": "FRM",
+      "module": "Telephony & PBX configuration",
+      "reference": "partial"
+    },
+    {
+      "number": 162,
+      "title": "Extension Details",
+      "route": "/app/pbx/extensions/[id]",
+      "template": "DTL",
+      "module": "Telephony & PBX configuration",
+      "reference": "partial"
+    },
+    {
+      "number": 163,
+      "title": "Phone Number Management",
+      "route": "/app/pbx/numbers",
+      "template": "LST",
+      "module": "Telephony & PBX configuration",
+      "reference": "partial"
+    },
+    {
+      "number": 164,
+      "title": "Inbound Routes",
+      "route": "/app/pbx/inbound-routes",
+      "template": "LST",
+      "module": "Telephony & PBX configuration",
+      "reference": "strong"
+    },
+    {
+      "number": 165,
+      "title": "Outbound Routes",
+      "route": "/app/pbx/outbound-routes",
+      "template": "LST",
+      "module": "Telephony & PBX configuration",
+      "reference": "partial"
+    },
+    {
+      "number": 166,
+      "title": "Dialplan Management",
+      "route": "/app/pbx/dialplans",
+      "template": "BLD",
+      "module": "Telephony & PBX configuration",
+      "reference": "none"
+    },
+    {
+      "number": 167,
+      "title": "PBX Event Logs",
+      "route": "/app/pbx/logs",
+      "template": "LOG",
+      "module": "Telephony & PBX configuration",
+      "reference": "none"
+    },
+    {
+      "number": 168,
+      "title": "PBX System Status",
+      "route": "/app/pbx/status",
+      "template": "MON",
+      "module": "Telephony & PBX configuration",
+      "reference": "none"
+    },
+    {
+      "number": 169,
+      "title": "User Management",
+      "route": "/app/access/users",
+      "template": "LST",
+      "module": "Users & access",
+      "reference": "strong"
+    },
+    {
+      "number": 170,
+      "title": "Create User",
+      "route": "/app/access/users/new",
+      "template": "FRM",
+      "module": "Users & access",
+      "reference": "strong"
+    },
+    {
+      "number": 171,
+      "title": "Edit User",
+      "route": "/app/access/users/[id]/edit",
+      "template": "FRM",
+      "module": "Users & access",
+      "reference": "strong"
+    },
+    {
+      "number": 172,
+      "title": "User Details",
+      "route": "/app/access/users/[id]",
+      "template": "DTL",
+      "module": "Users & access",
+      "reference": "strong"
+    },
+    {
+      "number": 173,
+      "title": "Roles Management",
+      "route": "/app/access/roles",
+      "template": "LST",
+      "module": "Users & access",
+      "reference": "strong"
+    },
+    {
+      "number": 174,
+      "title": "Create Role",
+      "route": "/app/access/roles/new",
+      "template": "FRM",
+      "module": "Users & access",
+      "reference": "strong"
+    },
+    {
+      "number": 175,
+      "title": "Edit Role",
+      "route": "/app/access/roles/[id]/edit",
+      "template": "FRM",
+      "module": "Users & access",
+      "reference": "strong"
+    },
+    {
+      "number": 176,
+      "title": "Permissions Management",
+      "route": "/app/access/permissions",
+      "template": "SET",
+      "module": "Users & access",
+      "reference": "strong"
+    },
+    {
+      "number": 177,
+      "title": "User Invitations",
+      "route": "/app/access/invitations",
+      "template": "LST",
+      "module": "Users & access",
+      "reference": "none"
+    },
+    {
+      "number": 178,
+      "title": "Session Management",
+      "route": "/app/access/sessions",
+      "template": "LST",
+      "module": "Users & access",
+      "reference": "none"
+    },
+    {
+      "number": 179,
+      "title": "Audit Logs",
+      "route": "/app/access/audit-logs",
+      "template": "LOG",
+      "module": "Users & access",
+      "reference": "partial"
+    },
+    {
+      "number": 180,
+      "title": "Organisation Profile",
+      "route": "/app/org/profile",
+      "template": "SET",
+      "module": "Organisation",
+      "reference": "partial"
+    },
+    {
+      "number": 181,
+      "title": "Organisation Settings",
+      "route": "/app/org/settings",
+      "template": "SET",
+      "module": "Organisation",
+      "reference": "strong"
+    },
+    {
+      "number": 182,
+      "title": "Department Management",
+      "route": "/app/org/departments",
+      "template": "LST",
+      "module": "Organisation",
+      "reference": "partial"
+    },
+    {
+      "number": 183,
+      "title": "Organisation Members",
+      "route": "/app/org/members",
+      "template": "LST",
+      "module": "Organisation",
+      "reference": "partial"
+    },
+    {
+      "number": 184,
+      "title": "Organisation Preferences",
+      "route": "/app/org/preferences",
+      "template": "SET",
+      "module": "Organisation",
+      "reference": "partial"
+    },
+    {
+      "number": 185,
+      "title": "Subscription Management",
+      "route": "/app/org/subscription",
+      "template": "SET",
+      "module": "Organisation",
+      "reference": "none"
+    },
+    {
+      "number": 186,
+      "title": "Billing History",
+      "route": "/app/org/billing",
+      "template": "LST",
+      "module": "Organisation",
+      "reference": "none"
+    },
+    {
+      "number": 187,
+      "title": "Usage & Limits",
+      "route": "/app/org/usage",
+      "template": "DSH",
+      "module": "Organisation",
+      "reference": "none"
+    },
+    {
+      "number": 188,
+      "title": "Integrations Dashboard",
+      "route": "/app/integrations",
+      "template": "DSH",
+      "module": "Integrations & developer tools",
+      "reference": "strong"
+    },
+    {
+      "number": 189,
+      "title": "Available Integrations",
+      "route": "/app/integrations/available",
+      "template": "LST",
+      "module": "Integrations & developer tools",
+      "reference": "strong"
+    },
+    {
+      "number": 190,
+      "title": "Integration Details",
+      "route": "/app/integrations/[id]",
+      "template": "DTL",
+      "module": "Integrations & developer tools",
+      "reference": "strong"
+    },
+    {
+      "number": 191,
+      "title": "Connected Applications",
+      "route": "/app/integrations/connected",
+      "template": "LST",
+      "module": "Integrations & developer tools",
+      "reference": "strong"
+    },
+    {
+      "number": 192,
+      "title": "API Key Management",
+      "route": "/app/developer/api-keys",
+      "template": "LST",
+      "module": "Integrations & developer tools",
+      "reference": "none"
+    },
+    {
+      "number": 193,
+      "title": "Create API Key",
+      "route": "/app/developer/api-keys/new",
+      "template": "FRM",
+      "module": "Integrations & developer tools",
+      "reference": "none"
+    },
+    {
+      "number": 194,
+      "title": "Webhook Management",
+      "route": "/app/developer/webhooks",
+      "template": "LST",
+      "module": "Integrations & developer tools",
+      "reference": "none"
+    },
+    {
+      "number": 195,
+      "title": "Webhook Logs",
+      "route": "/app/developer/webhooks/logs",
+      "template": "LOG",
+      "module": "Integrations & developer tools",
+      "reference": "none"
+    },
+    {
+      "number": 196,
+      "title": "API Documentation",
+      "route": "/app/developer/docs",
+      "template": "DOC",
+      "module": "Integrations & developer tools",
+      "reference": "none"
+    },
+    {
+      "number": 197,
+      "title": "Developer Settings",
+      "route": "/app/developer/settings",
+      "template": "SET",
+      "module": "Integrations & developer tools",
+      "reference": "none"
+    },
+    {
+      "number": 198,
+      "title": "Notification Center",
+      "route": "/app/notifications",
+      "template": "LST",
+      "module": "Notifications & communication",
+      "reference": "none"
+    },
+    {
+      "number": 199,
+      "title": "Notification Settings",
+      "route": "/app/notifications/settings",
+      "template": "SET",
+      "module": "Notifications & communication",
+      "reference": "none"
+    },
+    {
+      "number": 200,
+      "title": "Email Templates",
+      "route": "/app/notifications/email-templates",
+      "template": "LST",
+      "module": "Notifications & communication",
+      "reference": "none"
+    },
+    {
+      "number": 201,
+      "title": "SMS Templates",
+      "route": "/app/notifications/sms-templates",
+      "template": "LST",
+      "module": "Notifications & communication",
+      "reference": "strong"
+    },
+    {
+      "number": 202,
+      "title": "Communication Logs",
+      "route": "/app/notifications/logs",
+      "template": "LOG",
+      "module": "Notifications & communication",
+      "reference": "partial"
+    },
+    {
+      "number": 203,
+      "title": "System Health Dashboard",
+      "route": "/app/system/health",
+      "template": "MON",
+      "module": "System administration",
+      "reference": "none"
+    },
+    {
+      "number": 204,
+      "title": "Background Jobs",
+      "route": "/app/system/jobs",
+      "template": "LST",
+      "module": "System administration",
+      "reference": "none"
+    },
+    {
+      "number": 205,
+      "title": "Job Details",
+      "route": "/app/system/jobs/[id]",
+      "template": "DTL",
+      "module": "System administration",
+      "reference": "none"
+    },
+    {
+      "number": 206,
+      "title": "System Logs",
+      "route": "/app/system/logs",
+      "template": "LOG",
+      "module": "System administration",
+      "reference": "none"
+    },
+    {
+      "number": 207,
+      "title": "Error Monitoring",
+      "route": "/app/system/errors",
+      "template": "LOG",
+      "module": "System administration",
+      "reference": "none"
+    },
+    {
+      "number": 208,
+      "title": "Backup Management",
+      "route": "/app/system/backups",
+      "template": "LST",
+      "module": "System administration",
+      "reference": "none"
+    },
+    {
+      "number": 209,
+      "title": "Storage Management",
+      "route": "/app/system/storage",
+      "template": "DSH",
+      "module": "System administration",
+      "reference": "none"
+    },
+    {
+      "number": 210,
+      "title": "Security Settings",
+      "route": "/app/system/security",
+      "template": "SET",
+      "module": "System administration",
+      "reference": "partial"
+    },
+    {
+      "number": 211,
+      "title": "Data Retention Settings",
+      "route": "/app/system/retention",
+      "template": "SET",
+      "module": "System administration",
+      "reference": "none"
+    },
+    {
+      "number": 212,
+      "title": "System Configuration",
+      "route": "/app/system/config",
+      "template": "SET",
+      "module": "System administration",
+      "reference": "partial"
+    },
+    {
+      "number": 213,
+      "title": "My Profile",
+      "route": "/app/me",
+      "template": "SET",
+      "module": "Personal settings",
+      "reference": "strong"
+    },
+    {
+      "number": 214,
+      "title": "Edit Profile",
+      "route": "/app/me/edit",
+      "template": "FRM",
+      "module": "Personal settings",
+      "reference": "strong"
+    },
+    {
+      "number": 215,
+      "title": "Change Password",
+      "route": "/app/me/password",
+      "template": "FRM",
+      "module": "Personal settings",
+      "reference": "partial"
+    },
+    {
+      "number": 216,
+      "title": "Two-Factor Authentication",
+      "route": "/app/me/2fa",
+      "template": "SET",
+      "module": "Personal settings",
+      "reference": "none"
+    },
+    {
+      "number": 217,
+      "title": "Personal Preferences",
+      "route": "/app/me/preferences",
+      "template": "SET",
+      "module": "Personal settings",
+      "reference": "partial"
+    },
+    {
+      "number": 218,
+      "title": "Appearance Settings",
+      "route": "/app/me/appearance",
+      "template": "SET",
+      "module": "Personal settings",
+      "reference": "partial"
+    },
+    {
+      "number": 219,
+      "title": "Language Settings",
+      "route": "/app/me/language",
+      "template": "SET",
+      "module": "Personal settings",
+      "reference": "none"
+    },
+    {
+      "number": 220,
+      "title": "My Notifications",
+      "route": "/app/me/notifications",
+      "template": "SET",
+      "module": "Personal settings",
+      "reference": "partial"
+    },
+    {
+      "number": 221,
+      "title": "My Devices",
+      "route": "/app/me/devices",
+      "template": "LST",
+      "module": "Personal settings",
+      "reference": "none"
+    },
+    {
+      "number": 222,
+      "title": "Active Sessions",
+      "route": "/app/me/sessions",
+      "template": "LST",
+      "module": "Personal settings",
+      "reference": "none"
+    }
+  ]
+}

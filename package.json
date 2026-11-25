@@ -1,0 +1,24 @@
+{
+  "name": "verdant",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Callflow CRM — marketing site and product app",
+  "scripts": {
+    "dev": "next dev -p 4173",
+    "build": "next build",
+    "start": "next start -p 4173",
+    "typecheck": "tsc --noEmit",
+    "generate:pages": "node scripts/generate-page-registry.mjs"
+  },
+  "dependencies": {
+    "next": "^16.4.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}
