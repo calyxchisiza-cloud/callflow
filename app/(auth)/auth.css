@@ -201,6 +201,70 @@
 
 .auth-steps + .auth-heading { margin-top: 4px; }
 
+.auth-role {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin: -8px 0 20px;
+  padding: 5px;
+  border: 1px solid #e9ede5;
+  border-radius: 14px;
+  background: #f8faf5;
+  text-align: left;
+}
+
+.auth-role button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: #7c8a7e;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: background .18s ease, border-color .18s ease, color .18s ease, box-shadow .18s ease;
+}
+
+.auth-role button:hover { color: #3d5c43; }
+
+.auth-role button.is-active {
+  border-color: #dce8ca;
+  background: #fff;
+  color: #26422f;
+  box-shadow: 0 6px 16px rgba(20, 44, 28, .06);
+}
+
+.auth-role button > svg { flex: none; color: #93a58a; }
+.auth-role button.is-active > svg { color: #6d9550; }
+
+.auth-role button > span {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.auth-role strong {
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.auth-role em {
+  color: #9aa59b;
+  font-size: 9px;
+  font-style: normal;
+}
+
+.auth-role button.is-active em { color: #7f9475; }
+
+@media (max-width: 400px) {
+  .auth-role { grid-template-columns: minmax(0, 1fr); }
+}
+
 .auth-optional { color: #a7afa8; font-weight: 500; }
 
 .auth-form { text-align: left; }
@@ -398,6 +462,48 @@
   border-radius: 50%;
   background: #9fca5b;
   box-shadow: 0 0 0 3px rgba(159, 202, 91, .2);
+}
+
+.auth-seat-fallback {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border: 1px dashed #d9e4c6;
+  border-radius: 12px;
+  background: #fbfdf6;
+  text-align: left;
+}
+
+.auth-seat-fallback p {
+  margin: 0;
+  color: #6f7d6a;
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+
+.auth-seat-fallback p strong { color: #40543f; }
+
+.auth-seat-fallback button {
+  align-self: flex-start;
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid #cfe0b2;
+  border-radius: 8px;
+  background: #f1f8e4;
+  color: #47682f;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-seat-fallback button:hover { background: #e8f3d7; }
+
+.auth-seat-fallback > span {
+  color: #9aa88f;
+  font-size: 9.5px;
 }
 
 .auth-divider {

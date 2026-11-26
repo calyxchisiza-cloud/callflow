@@ -5,32 +5,52 @@ import { useRouter } from "next/navigation";
 import { concretePages, moduleMeta, pages } from "@/config/navigation";
 import { Icon } from "@/components/icon";
 
+export type PaletteItem = {
+  id: string;
+  title: string;
+  route: string;
+  group: string;
+  template: string;
+  icon: string;
+};
+
+const registryItems: PaletteItem[] = concretePages.map((page) => ({
+  id: String(page.number),
+  title: page.title,
+  route: page.route,
+  group: moduleMeta[page.module]?.label ?? page.module,
+  template: page.template,
+  icon: moduleMeta[page.module]?.icon ?? "spark",
+}));
+
+const domId = (id: string) => `palette-result-${id.replace(/[^a-zA-Z0-9_-]/g, "-")}`;
+
 type CommandPaletteProps = {
   open: boolean;
   onClose: () => void;
+  items?: PaletteItem[];
 };
 
-export function CommandPalette({ open, onClose }: CommandPaletteProps) {
+export function CommandPalette({ open, onClose, items }: CommandPaletteProps) {
   const [query, setQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
+  const source = items ?? registryItems;
+
   const results = useMemo(() => {
     const term = query.trim().toLowerCase();
-    if (!term) return concretePages.slice(0, 9);
-    return concretePages
-      .filter((page) => {
-        const meta = moduleMeta[page.module];
-        return (
-          page.title.toLowerCase().includes(term) ||
-          page.route.toLowerCase().includes(term) ||
-          page.module.toLowerCase().includes(term) ||
-          meta?.label.toLowerCase().includes(term)
-        );
-      })
+    if (!term) return source.slice(0, 9);
+    return source
+      .filter(
+        (item) =>
+          item.title.toLowerCase().includes(term) ||
+          item.route.toLowerCase().includes(term) ||
+          item.group.toLowerCase().includes(term),
+      )
       .slice(0, 40);
-  }, [query]);
+  }, [query, source]);
 
   useEffect(() => {
     if (!open) return;
@@ -92,13 +112,15 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
             ref={inputRef}
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Jump to a page, module, or route…"
+            placeholder={
+              items ? "Jump to an agent page…" : "Jump to a page, module, or route…"
+            }
             aria-label="Search pages"
             role="combobox"
             aria-expanded="true"
             aria-controls="palette-results"
             aria-activedescendant={
-              results[activeIndex] ? `palette-result-${results[activeIndex].number}` : undefined
+              results[activeIndex] ? domId(results[activeIndex].id) : undefined
             }
           />
           <kbd>esc</kbd>
@@ -108,30 +130,30 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
           {results.length === 0 && (
             <li className="palette-empty">No page matches “{query}”.</li>
           )}
-          {results.map((page, index) => (
-            <li key={page.number} role="presentation">
+          {results.map((item, index) => (
+            <li key={item.id} role="presentation">
               <button
                 type="button"
-                id={`palette-result-${page.number}`}
+                id={domId(item.id)}
                 role="option"
                 aria-selected={index === activeIndex}
                 className={index === activeIndex ? "is-active" : undefined}
                 onMouseMove={() => setActiveIndex(index)}
                 onClick={() => {
                   onClose();
-                  router.push(page.route);
+                  router.push(item.route);
                 }}
               >
                 <span className="palette-icon">
-                  <Icon name={moduleMeta[page.module]?.icon ?? "spark"} size={17} />
+                  <Icon name={item.icon} size={17} />
                 </span>
                 <span className="palette-copy">
-                  <strong>{page.title}</strong>
+                  <strong>{item.title}</strong>
                   <span>
-                    {moduleMeta[page.module]?.label ?? page.module} · {page.template}
+                    {item.group} · {item.template}
                   </span>
                 </span>
-                <span className="palette-route">{page.route.replace("/app", "")}</span>
+                <span className="palette-route">{item.route.replace("/app", "")}</span>
               </button>
             </li>
           ))}
@@ -145,9 +167,7 @@ export function CommandPalette({ open, onClose }: CommandPaletteProps) {
           <span>
             <kbd>↵</kbd> open
           </span>
-          <span>
-            {concretePages.length} of {pages.length} screens
-          </span>
+          <span>{items ? `${source.length} agent pages` : `${concretePages.length} of ${pages.length} screens`}</span>
         </div>
       </div>
     </div>
