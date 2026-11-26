@@ -191,6 +191,9 @@ const paths: Record<string, ReactNode> = {
       <path d="M3 12h4l2.4-6 4.2 12 2.4-6h5" />
     </>
   ),
+  plus: <path d="M12 5v14M5 12h14" />,
+  edit: <path d="M4 20h4L20 8a2.1 2.1 0 0 0-3-3L5 17v3Z" />,
+  trash: <path d="M4 7h16M10 7V4h4v3M6 7l1 13h10l1-13" />,
 };
 
 type IconProps = {
