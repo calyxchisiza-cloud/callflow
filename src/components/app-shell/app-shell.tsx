@@ -122,10 +122,11 @@ export function AppShell({ children }: { children: ReactNode }) {
     }));
   }, []);
 
+  const agentLockedOut = sessionReady && isAgent && !agentRouteAllowed(pathname);
+
   useEffect(() => {
-    if (!sessionReady || !isAgent) return;
-    if (!agentRouteAllowed(pathname)) router.replace("/app/agent");
-  }, [isAgent, pathname, router, sessionReady]);
+    if (agentLockedOut) router.replace("/app/agent");
+  }, [agentLockedOut, router]);
 
   const signOut = () => {
     clearSession();
@@ -185,7 +186,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             href={isAgent ? "/app/agent" : "/app/dashboard"}
             title={collapsed ? (isAgent ? "callflow agent desk" : "callflow workspace") : undefined}
           >
-            <img src="/callflow-mark.svg" alt="" width={30} height={30} />
+            <img src="/callflow-mark.png" alt="" width={30} height={30} />
             <span>
               callflow
               <em>{isAgent ? "agent desk" : "workspace"}</em>
@@ -433,7 +434,17 @@ export function AppShell({ children }: { children: ReactNode }) {
               })}
             </nav>
           )}
-          {children}
+          {!sessionReady || agentLockedOut ? (
+            <article className="screen">
+              <p className="screen-lede">
+                {agentLockedOut
+                  ? "Owner pages, including lead uploads and agent seats, are not available on an agent desk. Taking you back to your desk…"
+                  : "Opening your workspace…"}
+              </p>
+            </article>
+          ) : (
+            children
+          )}
         </main>
       </div>
 

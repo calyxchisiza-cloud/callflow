@@ -85,7 +85,7 @@ export function AuthTransition() {
   return (
     <div className="page-transition" ref={overlayRef} aria-hidden="true">
       <div className="page-transition-inner">
-        <img src="/callflow-mark.svg" alt="" width={32} height={32} />
+        <img src="/callflow-mark.png" alt="" width={32} height={32} />
         <span>callflow</span>
       </div>
     </div>

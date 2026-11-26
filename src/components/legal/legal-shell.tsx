@@ -20,7 +20,7 @@ export function LegalShell({ title, description, updated, sections }: LegalShell
     <div className="legal">
       <header className="legal-top">
         <Link className="legal-brand" href="/" aria-label="Callflow home">
-          <img src="/callflow-mark.svg" alt="" width={26} height={26} />
+          <img src="/callflow-mark.png" alt="" width={26} height={26} />
           <span>callflow</span>
         </Link>
         <nav className="legal-nav" aria-label="Site">
