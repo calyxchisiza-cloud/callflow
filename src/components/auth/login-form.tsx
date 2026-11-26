@@ -63,6 +63,21 @@ export function LoginForm() {
         router.push("/app/agent");
         return;
       }
+      if (readSession()?.role === "agent") {
+        setMessage({
+          tone: "error",
+          text: "Sign out of the agent desk before opening the owner workspace.",
+        });
+        return;
+      }
+      if (findAgentByEmail(email.trim())) {
+        setMessage({
+          tone: "error",
+          text: "That email belongs to an agent seat. Use the Agent tab to open that desk.",
+        });
+        setMissingSeat(null);
+        return;
+      }
       setSession({ role: "owner" });
       setPending(true);
       router.push("/app/dashboard");
